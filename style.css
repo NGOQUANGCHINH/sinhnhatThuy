@@ -5,6 +5,7 @@ body {
   margin: 0; /* Bỏ margin mặc định */
   background-color: pink;
 }
+/* hình trái tim */
 .container {
   background-color: red;
   display: inline-block;
@@ -15,8 +16,9 @@ body {
   transform: rotate(-45deg);
   position: absolute;
   left: 40%;
-  top: 60%;
+  top:50%;
   width: 100px;
+  /* hiệu ứng từ từ hiện lên */
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
@@ -37,9 +39,11 @@ body {
   left: 50px;
   top: 0;
 }
+/* tiêu đề sinh nhật */
 .anhsinhnhat {
   margin: -5px 0px 0px 70px;
 }
+/* trang trí ảnh tiêu đề */
 .tieude {
   display: block;
   width: 250px;
@@ -49,6 +53,7 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
+/* happy brithday */
 h1 {
   text-align: center;
   font-size: 50px;
@@ -58,6 +63,7 @@ h1 {
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
+/* Thanh Thuý */
 h2 {
   text-align: center;
   font-size: 50px;
@@ -67,6 +73,7 @@ h2 {
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
+/* Hộp quà */
 .anhhopqua {
   width: 200px;
   height: 200px;
@@ -74,11 +81,13 @@ h2 {
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
+/* bấm vào trang web nội dung sẽ tự hiện lên */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
+/* Nhạc trang web  */
 #start-btn {
   position: absolute;
   top: 40%;
