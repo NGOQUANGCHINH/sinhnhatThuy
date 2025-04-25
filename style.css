@@ -41,10 +41,11 @@ body {
   margin: -5px 0px 0px 70px;
 }
 .tieude {
+  display: block;
   width: 250px;
   height: 150px;
   /* border: 1px solid black; */
-  margin: 0 auto;
+  margin: 0 0px 0 20px;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
