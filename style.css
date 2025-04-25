@@ -15,7 +15,7 @@ body {
   transform: rotate(-45deg);
   position: absolute;
   left: 40%;
-  top: 50%;
+  top: 70%;
   width: 100px;
   opacity: 0;
   animation: fadeIn 3s ease forwards;
