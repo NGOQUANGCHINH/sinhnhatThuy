@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid black; */
+  /* opacity: 50%; */
+}
+.box1 {
+  width: 302px;
+  height: 300px;
+  border-radius: 999px;
+  position: absolute;
+  top: 18%;
+  left: 36%;
+}
+.box3 {
+  width: 302px;
+  height: 300px;
+  border-radius: 999px;
+  position: absolute;
+  top: 18%;
+  left: 48%;
+  z-index: -1;
+}
+.box2 {
+  /* hình vuông */
+  transform: rotate(45deg);
+  position: absolute;
+  top: 30%;
+}
+h1 {
+}
+/* Media query cho màn hình điện thoại */
+@media screen and (max-width: 768px) {
+  .half-circle {
+    width: 150px;
+    height: 150px;
+    clip-path: ellipse(50% 50% at 50% 100%);
+  }
+}
+
+/* Media query cho màn hình rất nhỏ (ví dụ: điện thoại nhỏ) */
+@media screen and (max-width: 480px) {
+  .half-circle {
+    width: 120px;
+    height: 120px;
+    clip-path: ellipse(50% 50% at 50% 100%);
+  }
+}
