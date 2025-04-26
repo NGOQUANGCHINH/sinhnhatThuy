@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%; /* Đảm bảo chiều cao của body là 100% */
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: 0; /* Bỏ margin mặc định */
   background-color: pink;
 }
