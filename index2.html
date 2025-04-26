@@ -7,23 +7,32 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="hienthi">
-
-      <div class="hienthi1">
-        <h1 class="container-trang1">Medico</h1>
-        <button class="btn facebook-btn">Facebook</button><br />
-        <button class="btn mobile-btn">Mobile number</button>
-        <p class="text trang1-1">Trouble signing in?</p>
-        <div class="hinhtron">
-            <div class="hinh hinhtron1"></div>
-            <div class="hinh hinhtron2"></div>
-            <div class="hinh hinhtron3"></div>
-        </div>
-        <p class="text trang1-2">By không quý khó không nhỉ thay</p>
-      </div>
-
-      <div class="hienthi1"></div>
-      <div class="hienthi1"></div>
+    <a href="./img/meme.mp4" onclick="playVideo()"
+    <div id="videoContainer">
+      <video id="video" muted autoplay controls>
+        <source src="video.mp4" type="video/mp4" />
+        Trình duyệt không hỗ trợ video.
+      </video>
     </div>
+
+    <script>
+      function playVideo() {
+        var container = document.getElementById("videoContainer");
+        var video = document.getElementById("video");
+        container.style.display = "block"; // Hiện video ra toàn màn
+        video.play(); // Play video
+
+        // Tự mở fullscreen (nếu trình duyệt hỗ trợ)
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) {
+          /* Safari */
+          video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+          /* IE11 */
+          video.msRequestFullscreen();
+        }
+      }
+    </script>
   </body>
 </html>

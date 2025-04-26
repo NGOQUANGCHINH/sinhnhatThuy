@@ -5,18 +5,18 @@ body {
   margin: 0; /* Bỏ margin mặc định */
   background-color: pink;
 }
+.container {
+  margin: 0 auto;
+}
 /* hình trái tim */
 .container {
   background-color: red;
-  display: inline-block;
+  display: block;
   height: 100px;
   margin: 0 auto;
   position: relative;
   top: 0;
   transform: rotate(-45deg);
-  position: absolute;
-  left: 40%;
-  top: 50%;
   width: 100px;
   /* hiệu ứng từ từ hiện lên */
   opacity: 0;
@@ -37,11 +37,12 @@ body {
 }
 .container:after {
   left: 50px;
-  top: 0;
+  top: 0px;
 }
 /* tiêu đề sinh nhật */
 .anhsinhnhat {
-  margin: -5px 0px 0px 70px;
+  display: inline;
+  margin: 0 auto;
 }
 /* trang trí ảnh tiêu đề */
 .tieude {
@@ -53,8 +54,15 @@ body {
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
-/* happy brithday */
+.tieude {
+  display: block;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+}
+/*happy brithday */
 h1 {
+  width: 400px;
   text-align: center;
   font-size: 50px;
   color: white;
@@ -72,12 +80,19 @@ h2 {
   text-shadow: 4px 0px 2px rgba(0, 0, 0, 0.44);
   opacity: 0;
   animation: fadeIn 3s ease forwards;
+  font-weight: bold;
+}
+/* hộp quà */
+.hopqua {
+  /* display: inline; */
 }
 /* Hộp quà */
 .anhhopqua {
+  display: flex;
   width: 200px;
   height: 200px;
-  margin-top: 240px;
+  margin: 50px auto;
+  /* hiệu ứng bấm vào trang */
   opacity: 0;
   animation: fadeIn 3s ease forwards;
 }
@@ -100,4 +115,32 @@ h2 {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+/* button */
+#start-btn {
+  margin-top: 100px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Màu xám mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* Luôn ở trên cùng */
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* màu xám mờ */
+  z-index: 9999; /* Lớp cao nhất */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
